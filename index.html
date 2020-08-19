@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AttnGAN Gallery</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+            margin: 0;
+        }
+
+        input {
+            position: fixed;
+            top: 90vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            background: transparent;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            font-size: 24px;
+            color: #fff;
+            opacity: 0.2;
+            outline: none;
+            transition: 0.5s;
+            border-radius: 5px;
+        }
+
+        input:focus {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="caption" placeholder="Type a caption">
+    <script src="third_party/three.min.js"></script>
+    <script src="third_party/OrbitControls.js"></script>
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
